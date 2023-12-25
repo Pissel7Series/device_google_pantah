@@ -100,10 +100,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.recovery.panther.touch.rc
 
-# Overlays
-PRODUCT_PACKAGES += \
-    HbmSVManagerOverlayPanther
-
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
