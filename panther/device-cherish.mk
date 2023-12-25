@@ -8,10 +8,6 @@ $(call inherit-product, $(DEVICE_PATH)/device-cherish.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-cherish
 
-# HBM
-PRODUCT_PACKAGES += \
-    HbmSVManagerOverlayPanther
-
 # Init
 PRODUCT_PACKAGES += \
     init.recovery.panther.touch.rc
