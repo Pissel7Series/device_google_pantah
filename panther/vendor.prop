@@ -5,6 +5,12 @@ media.mediadrmservice.enable=true
 # Fingerprint
 ro.vendor.fingerprint.ta.name=g7.app
 
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.dbg.allow_ims_off=1
+
 # Radio
 persist.vendor.ril.ecc.use.xml=1
 persist.vendor.ril.support_nr_ds=1

@@ -24,8 +24,8 @@ $(call inherit-product, device/google/pantah/device-panther.mk)
 
 PRODUCT_NAME := aosp_panther
 PRODUCT_DEVICE := panther
-PRODUCT_MODEL := AOSP on Panther
-PRODUCT_BRAND := Android
+PRODUCT_MODEL := Pixel 7
+PRODUCT_BRAND := google
 PRODUCT_MANUFACTURER := Google
 
 DEVICE_MANIFEST_FILE := \
