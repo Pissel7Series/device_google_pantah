@@ -1,0 +1,6 @@
+# Configuration for Pixel 7 Pro
+ro.infinity.soc=Google Tensor G2
+ro.infinity.battery=5000mAh
+ro.infinity.display=3120x1440, 120Hz
+ro.infinity.camera=50MP+48MP+12MP+10MP
+ro.product.marketname=Pixel 7 Pro
