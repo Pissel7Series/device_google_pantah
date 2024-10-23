@@ -21,6 +21,12 @@ PRODUCT_PACKAGES += \
 # Kernel
 TARGET_PREBUILT_KERNEL := device/google/pantah-kernel/Image.lz4
 
+# PixelParts
+include packages/apps/PixelParts/device.mk
+
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
