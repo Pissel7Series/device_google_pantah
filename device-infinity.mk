@@ -32,6 +32,9 @@ PRODUCT_USE_SCUDO := true
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
 
+# Viper4AndroidFx
+include packages/apps/ViPER4AndroidFX/config.mk
+
 # Googles Face Unlock
 include vendor/google/faceunlock/device.mk
 # Required packages for Googles Face Unlock
