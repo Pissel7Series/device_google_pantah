@@ -26,11 +26,9 @@ else
 $(call soong_config_set,pantah_fingerprint,prebuilt_dir,$(RELEASE_GOOGLE_BOOTLOADER_CHEETAH_DIR))
 endif
 
-
-TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_CHEETAH_VERSION)
-# Keeps flexibility for kasan and ufs builds
-TARGET_KERNEL_DIR ?= $(RELEASE_KERNEL_CHEETAH_DIR)
-TARGET_BOARD_KERNEL_HEADERS ?= $(RELEASE_KERNEL_CHEETAH_DIR)/kernel-headers
+TARGET_KERNEL_DIR := device/google/pantah-kernels/6.1/25Q1-13202328
+TARGET_BOARD_KERNEL_HEADERS := device/google/pantah-kernels/6.1/25Q1-13202328/kernel-headers
+TARGET_PREBUILT_KERNEL := device/google/pantah-kernels/6.1/25Q1-13202328/Image.lz4
 
 $(call inherit-product, device/google/pantah/uwb/uwb_calibration_country.mk)
 
