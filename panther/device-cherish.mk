@@ -4,9 +4,9 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, $(DEVICE_PATH)/device-lineage.mk)
+$(call inherit-product, $(DEVICE_PATH)/device-cherish.mk)
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-cherish
 
 # HBM
 PRODUCT_PACKAGES += \
