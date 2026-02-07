@@ -21,6 +21,18 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.prebuilt.xml \
     android.hardware.bluetooth_le.prebuilt.xml
 
+# Always use scudo for memory allocator
+PRODUCT_USE_SCUDO := true
+
+# Camera
+$(call inherit-product-if-exists, vendor/google/camera/config.mk)
+
+# Face unlock
+$(call inherit-product-if-exists, vendor/google/faceunlock/config.mk)
+
+# Pixel Parts
+$(call inherit-product-if-exists, packages/apps/PixelParts/device.mk)
+
 # Recovery files
 PRODUCT_COPY_FILES += \
     device/google/pantah/recovery/init.recovery.device.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.panther.rc

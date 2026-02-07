@@ -36,3 +36,6 @@ ro.quick_start.oem_id=00e0
 
 # Window extensions
 persist.settings.large_screen_opt.enabled=false
+
+# Maintainer
+ro.lunaris.maintainer=Pyrtle93
